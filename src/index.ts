@@ -7,6 +7,10 @@ app.get('/', (c) => {
   return c.text('Hello Hono!')
 })
 
+app.get('/mcp', (c) => {
+  return c.text('Hello MCP!')
+})
+
 serve({
   fetch: app.fetch,
   port: 3000
